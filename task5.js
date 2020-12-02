@@ -8,6 +8,11 @@ function Fibonacci(n){
     return Fibonacci(n-2) + Fibonacci(n-1);
 }
 
-var n = 8;
+var n = 9;
+var b = [];
 
-console.log(Fibonacci(n));
+for (var i=1; i<=n; i++){
+    b.push(Fibonacci(i));
+}
+
+console.log(b);
